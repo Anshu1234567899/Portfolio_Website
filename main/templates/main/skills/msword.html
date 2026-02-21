@@ -1,0 +1,87 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-cyan-500 via-purple-500 to-cyan-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(0,255,255,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        MS Word
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          Microsoft Word is a versatile word-processing application widely used for creating, editing, and formatting documents. It allows users to produce professional reports, essays, resumes, and business documents with ease and precision. Mastering MS Word enhances efficiency and ensures documents are visually appealing and structurally organized.
+        </p>
+        <p>
+          Beyond basic text editing, MS Word supports advanced features like styles, templates, tables, headers and footers, footnotes, references, and track changes. This makes it invaluable for collaboration, documentation, and publishing in both academic and professional environments.
+        </p>
+        <p>
+          For students and professionals alike, MS Word enables structured document creation that is both readable and accessible. Learning to leverage its tools effectively—like formatting, tables, and visual elements—ensures that documents communicate ideas clearly and professionally.
+        </p>
+        <p>
+          Modern MS Word also integrates with cloud services like OneDrive, allowing real-time collaboration, commenting, and version control. Proficiency in MS Word is essential for office productivity, academic success, and delivering high-quality documentation in professional settings.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Creating resumes, cover letters, and professional profiles</li>
+          <li>Preparing business reports, proposals, and documentation</li>
+          <li>Drafting academic assignments, essays, and research papers</li>
+          <li>Designing newsletters, flyers, and formatted publications</li>
+          <li>Collaborating with colleagues via tracked changes and comments</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use styles and templates to maintain consistent formatting</li>
+          <li>Keep documents well-structured with headings, tables, and lists</li>
+          <li>Use track changes and comments for collaborative editing</li>
+          <li>Incorporate visuals and charts for clarity and impact</li>
+          <li>Ensure accessibility by adding alt text and proper headings</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use macros to automate repetitive formatting tasks</li>
+          <li>Leverage advanced features like mail merge for bulk documents</li>
+          <li>Integrate with OneDrive for seamless collaboration and backup</li>
+        </ul>
+      </div>
+
+      <!-- Example Snippet / Illustration -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre># Example Concept: Using Python to automate Word document creation
+from docx import Document
+
+doc = Document()
+doc.add_heading('Monthly Report', 0)
+doc.add_paragraph('This document summarizes project progress for the month.')
+doc.add_table(rows=2, cols=2)
+doc.save('Monthly_Report.docx')</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

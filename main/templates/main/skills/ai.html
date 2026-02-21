@@ -1,0 +1,103 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-purple-500 via-cyan-500 to-purple-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(168,85,247,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        AI Implementation & Automation
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          Artificial Intelligence (AI) and Automation are reshaping modern industries by enabling smarter decision-making and reducing repetitive work. AI leverages machine learning, deep learning, and advanced algorithms to process data, detect patterns, and generate actionable insights. Automation complements AI by orchestrating processes, workflows, and repetitive tasks efficiently.
+        </p>
+        <p>
+          From natural language processing, computer vision, predictive analytics, to intelligent recommendation systems, AI powers a wide range of applications. By integrating AI with automation pipelines, developers can create systems that adapt, optimize, and scale with minimal human intervention. This combination is pivotal for businesses aiming to innovate quickly and maintain competitive advantage.
+        </p>
+        <p>
+          Mastering AI implementation requires understanding data pipelines, model selection, feature engineering, and deployment strategies. Professionals need to combine programming expertise, statistical knowledge, and domain-specific understanding to design scalable and ethical AI solutions. Proper implementation ensures reliability, transparency, and actionable intelligence.
+        </p>
+        <p>
+          For students and aspiring developers, learning AI and automation opens opportunities to build intelligent applications like chatbots, automated dashboards, predictive engines, and smart recommendation systems. Practical knowledge in AI tools, cloud platforms, and workflow automation empowers developers to design end-to-end intelligent solutions.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>AI-powered chatbots and virtual assistants for customer engagement</li>
+          <li>Predictive analytics dashboards for business intelligence</li>
+          <li>Automating repetitive tasks in data processing and reporting</li>
+          <li>Personalized recommendation systems for e-commerce and media platforms</li>
+          <li>Supply chain, marketing, and operations optimization using AI insights</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Understand the problem domain thoroughly before applying AI solutions</li>
+          <li>Maintain modular, reusable, and well-documented ML/automation code</li>
+          <li>Implement proper data preprocessing and feature engineering techniques</li>
+          <li>Evaluate models regularly to prevent bias, overfitting, and errors</li>
+          <li>Version control and document AI workflows for reproducibility and collaboration</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Leverage cloud AI platforms (AWS, Azure, GCP) for scalable deployment</li>
+          <li>Automate model retraining pipelines for continuous improvement</li>
+          <li>Use explainable AI techniques to improve transparency and trustworthiness</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre># Python Example: Automating AI Prediction Workflow
+
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+import joblib
+
+# Load dataset
+iris = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(
+    iris.data, iris.target, test_size=0.3, random_state=42
+)
+
+# Train AI model
+model = RandomForestClassifier(n_estimators=100)
+model.fit(X_train, y_train)
+
+# Save trained model for automation
+joblib.dump(model, "iris_model.pkl")
+
+# Predict & evaluate
+predictions = model.predict(X_test)
+accuracy = (predictions == y_test).mean()
+print(f"Model Accuracy: {accuracy*100:.2f}%")</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

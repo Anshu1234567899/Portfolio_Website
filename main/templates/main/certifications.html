@@ -1,0 +1,79 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="min-h-screen bg-black text-white py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+        <h2 class="text-4xl font-bold text-purple-400 mb-16">
+            Professional Certifications
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Google Digital Marketing -->
+            <a href="{% static 'images/digital_marketing_google.jpeg' %}" target="_blank"
+               class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-cyan-500/20 hover:scale-105 transition duration-500">
+                <img src="{% static 'images/digital_marketing_google.jpeg' %}" 
+                     class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-semibold text-cyan-400">
+                        Fundamentals of Digital Marketing
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2">
+                        Completed via Google Certification Program.
+                    </p>
+                </div>
+            </a>
+
+            <!-- Python & ML -->
+            <a href="{% static 'images/python_ml_excellence.jpeg' %}" target="_blank"
+               class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-purple-500/20 hover:scale-105 transition duration-500">
+                <img src="{% static 'images/python_ml_excellence.jpeg' %}" 
+                     class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-semibold text-purple-400">
+                        Python & Machine Learning
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2">
+                        Completed from Excellence Technology.
+                    </p>
+                </div>
+            </a>
+
+            <!-- Data Analytics -->
+            <a href="{% static 'images/data_analytics_excellence.jpeg' %}" target="_blank"
+               class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-cyan-500/20 hover:scale-105 transition duration-500">
+                <img src="{% static 'images/data_analytics_excellence.jpeg' %}" 
+                     class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-semibold text-cyan-400">
+                        Data Analytics
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2">
+                        Completed from Excellence Technology.
+                    </p>
+                </div>
+            </a>
+
+            <!-- DCA -->
+            <a href="{% static 'images/dca_stp.jpg' %}" target="_blank"
+               class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-purple-500/20 hover:scale-105 transition duration-500">
+                <img src="{% static 'images/dca_stp.jpg' %}" 
+                     class="w-full h-52 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-semibold text-purple-400">
+                        Diploma in Computer Applications (DCA)
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2">
+                        Completed from STP Computer Education.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

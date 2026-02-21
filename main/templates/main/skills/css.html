@@ -1,0 +1,102 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-purple-500 via-cyan-500 to-purple-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_40px_rgba(168,85,247,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        CSS
+      </h2>
+
+      <!-- Description -->
+      <div class="text-gray-300 space-y-4">
+        <p>
+          CSS (Cascading Style Sheets) is the magic wand that transforms plain HTML into beautiful, responsive, and interactive web pages. It allows you to control every aspect of layout, typography, color schemes, and visual hierarchy. A well-crafted CSS design makes a website not only functional but visually delightful.
+        </p>
+        <p>
+          With modern CSS techniques such as Flexbox, Grid, CSS Variables, and animations, developers can create dynamic, responsive, and accessible websites. CSS ensures consistent design across devices and screen sizes, making it the backbone of modern web development.
+        </p>
+        <p>
+          Beyond design, CSS enhances user experience by implementing intuitive interactions, smooth transitions, and hover effects. Writing clean, modular, and maintainable CSS is essential for professional-grade web applications.
+        </p>
+      </div>
+
+      <!-- Real World Use Cases -->
+      <div class="text-gray-300">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Building responsive websites that adapt seamlessly across mobile, tablet, and desktop.</li>
+          <li>Creating interactive UI components with hover, focus, and animation effects.</li>
+          <li>Designing brand-consistent themes across multiple web pages or apps.</li>
+          <li>Structuring grid layouts for complex dashboards and web applications.</li>
+          <li>Enhancing accessibility with readable typography, spacing, and color contrast.</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use semantic, meaningful class names for maintainable CSS.</li>
+          <li>Leverage Flexbox and Grid for responsive and scalable layouts.</li>
+          <li>Organize styles into modular, reusable components.</li>
+          <li>Avoid inline styles and redundant rules.</li>
+          <li>Use variables for consistent color, spacing, and typography.</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use CSS variables for theming and easy future updates.</li>
+          <li>Combine transitions and keyframe animations for smooth effects.</li>
+          <li>Experiment with modern features like clip-path, filters, and custom properties.</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Example&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header class="bg-purple-600 text-white p-4"&gt;
+      &lt;h1&gt;Welcome to My Styled Website&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;main class="p-6"&gt;
+      &lt;section class="grid grid-cols-1 md:grid-cols-2 gap-4"&gt;
+        &lt;div class="bg-gray-800 text-white p-4 rounded hover:bg-purple-700 transition"&gt;Card 1&lt;/div&gt;
+        &lt;div class="bg-gray-800 text-white p-4 rounded hover:bg-purple-700 transition"&gt;Card 2&lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer class="bg-gray-900 text-gray-300 p-4 text-center"&gt;
+      &lt;p&gt;© 2026 MyWebsite | All Rights Reserved&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

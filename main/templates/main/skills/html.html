@@ -1,0 +1,115 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-cyan-500 via-purple-500 to-cyan-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_40px_rgba(0,255,255,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        HTML
+      </h2>
+
+      <!-- Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          HTML (HyperText Markup Language) is the backbone of all web development. It defines the structure and content of web pages, enabling browsers to interpret and display information consistently. Understanding HTML is essential for creating accessible, scalable, and maintainable web applications.
+        </p>
+        <p>
+          Modern HTML standards support semantic elements like &lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, and &lt;footer&gt; which provide context to content, improve SEO, and enhance accessibility. Combined with CSS and JavaScript, HTML forms the foundation for creating responsive, interactive, and high-performance websites.
+        </p>
+        <p>
+          Beyond static pages, HTML integrates multimedia, forms, and APIs to build rich web applications. Professionals use it as a framework to structure dynamic content, collaborate efficiently with designers and backend developers, and ensure cross-browser compatibility. Mastery of HTML allows developers to create clean, readable code that scales for enterprise-grade projects.
+        </p>
+        <p>
+          Learning HTML is the first step in becoming a full-stack developer. Its principles influence accessibility standards, progressive enhancement, and web performance optimizations, making it a critical skill for both front-end and back-end development.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Creating responsive websites for startups and enterprises</li>
+          <li>Structuring content for SEO-friendly web applications</li>
+          <li>Building interactive forms and user input pages</li>
+          <li>Embedding multimedia content such as videos, audio, and images</li>
+          <li>Integrating APIs and dynamic widgets on web pages</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use semantic tags (&lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;) for structure</li>
+          <li>Maintain clean, readable, and well-indented code</li>
+          <li>Ensure accessibility with proper ARIA attributes and alt text</li>
+          <li>Validate HTML using W3C standards to avoid errors</li>
+          <li>Separate content (HTML), styling (CSS), and behavior (JS) for maintainability</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use HTML5 APIs like Canvas, Audio, and Video for rich interactive experiences</li>
+          <li>Leverage custom data attributes (data-*) for dynamic JavaScript interactions</li>
+          <li>Optimize HTML for performance by minimizing unnecessary nested elements</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Professional Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section&gt;
+        &lt;h2&gt;About Section&lt;/h2&gt;
+        &lt;p&gt;This section contains core content and information.&lt;/p&gt;
+      &lt;/section&gt;
+      &lt;section&gt;
+        &lt;h2&gt;Services&lt;/h2&gt;
+        &lt;p&gt;Details about services offered go here.&lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;© 2026 MyWebsite | All Rights Reserved&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

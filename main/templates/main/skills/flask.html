@@ -1,0 +1,91 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-purple-500 via-cyan-500 to-purple-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(168,85,247,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        Flask
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          Flask is a lightweight Python web micro-framework that allows developers to build web applications with minimal setup. It provides maximum flexibility, letting you choose components and architecture while keeping the core simple and maintainable.
+        </p>
+        <p>
+          Perfect for APIs, microservices, and small-to-medium web applications, Flask encourages modular design. Developers can extend functionality with extensions for database management, authentication, forms, and more, without the overhead of full-stack frameworks.
+        </p>
+        <p>
+          With Flask, developers gain full control over routing, middleware, and request handling. Its minimalistic approach ensures faster prototyping and easy integration with modern frontend frameworks or REST APIs. The simplicity of Flask makes it ideal for both beginners and professional developers seeking scalable, maintainable projects.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>RESTful API development</li>
+          <li>Microservices architecture</li>
+          <li>Rapid prototyping and MVP development</li>
+          <li>Small to medium web applications</li>
+          <li>Integration with frontend frameworks like React or Vue</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use Blueprints for modular and reusable apps</li>
+          <li>Keep configuration separated from code (environment variables)</li>
+          <li>Implement proper error handling and logging</li>
+          <li>Follow PEP8 conventions for clean Python code</li>
+          <li>Secure applications with authentication and input validation</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use Flask extensions judiciously to avoid bloat</li>
+          <li>Leverage Jinja2 templating efficiently for clean HTML rendering</li>
+          <li>Structure projects for scalability and maintainability</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre># app.py
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

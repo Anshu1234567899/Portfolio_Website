@@ -1,0 +1,95 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-cyan-400 via-blue-500 to-purple-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(0,255,255,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        Python
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          Python is a versatile, high-level programming language renowned for its simplicity, readability, and powerful capabilities. It is widely used across web development, data science, machine learning, automation, and more, making it an indispensable tool for modern developers.
+        </p>
+        <p>
+          Python’s clean syntax and extensive standard library allow developers to build scalable applications efficiently. It supports multiple programming paradigms including procedural, object-oriented, and functional programming, which makes it highly adaptable for diverse software projects.
+        </p>
+        <p>
+          In web development, Python powers frameworks like Django and Flask, enabling developers to create secure, high-performance backends. Additionally, Python integrates seamlessly with APIs, databases, and front-end technologies, allowing full-stack development with minimal friction.
+        </p>
+        <p>
+          Mastering Python equips developers with the skills to automate repetitive tasks, analyze complex datasets, implement AI solutions, and build robust applications—all while writing clean, maintainable, and highly readable code.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Backend web development with Django and Flask</li>
+          <li>Data analysis and visualization using Pandas and Matplotlib</li>
+          <li>Machine Learning and AI projects with TensorFlow, PyTorch, and scikit-learn</li>
+          <li>Automation scripts and DevOps pipelines</li>
+          <li>Web scraping and API integrations</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Follow PEP8 guidelines for consistent and readable code</li>
+          <li>Use virtual environments to manage dependencies</li>
+          <li>Write modular and reusable functions and classes</li>
+          <li>Include proper error handling and logging</li>
+          <li>Document code with docstrings and maintain clear comments</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Leverage Python’s rich ecosystem of libraries for rapid development</li>
+          <li>Use list comprehensions and generators for optimized, readable code</li>
+          <li>Adopt testing frameworks like PyTest for robust applications</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre># Python Example: Simple Web App using Flask
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/about")
+def about():
+    return "&lt;h1&gt;About Page&lt;/h1&gt;"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

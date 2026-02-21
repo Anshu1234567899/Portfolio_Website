@@ -1,0 +1,290 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<section class="relative min-h-screen bg-[#050507] text-white overflow-hidden">
+
+    <!-- ===== Animated Background Layer ===== -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#050507] via-[#0b0b18] to-[#050507]"></div>
+
+    <!-- Neon Blobs -->
+    <div class="absolute -top-60 -left-60 w-[700px] h-[700px] bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute -bottom-60 -right-60 w-[700px] h-[700px] bg-purple-600/20 rounded-full blur-3xl animate-pulse"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-28">
+
+        <!-- ================= HERO SECTION ================= -->
+        <div class="text-center mb-32" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                Technical Arsenal &
+                <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    Intelligent Capabilities
+                </span>
+            </h1>
+
+            <p class="mt-8 text-lg text-gray-400 max-w-3xl mx-auto">
+                I design and engineer scalable backend systems, intelligent automation workflows,
+                and high-performance digital infrastructures powered by Python and modern web technologies.
+            </p>
+
+            <div class="mt-10 w-40 h-[2px] mx-auto bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 rounded-full"></div>
+        </div>
+
+        <!-- ================= CORE DEVELOPMENT SKILLS ================= -->
+        <div class="mb-36">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-20 tracking-wide"
+                data-aos="fade-up">
+                Core Development Stack
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 perspective-[1500px]">
+
+                <!-- SKILL CARD -->
+                <div data-aos="zoom-in"
+                     class="group relative p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500
+                            transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <a href="{% url 'html' %}"
+   class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500
+          transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+    <div class="relative h-full w-full rounded-3xl bg-[#0b0b18] p-10 backdrop-blur-xl
+                border border-white/5
+                transition duration-700
+                group-hover:shadow-[0_0_80px_rgba(0,255,255,0.4)]">
+
+        <h3 class="text-2xl font-semibold tracking-wide text-white">
+            HTML
+        </h3>
+        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+            Semantic and scalable structural foundation for modern web systems.
+        </p>
+    </div>
+</a>
+
+                </div>
+
+                <!-- CSS -->
+                <div data-aos="zoom-in"
+                     class="group relative p-[2px] rounded-3xl bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500
+                            transition duration-700 hover:-translate-y-6 hover:scale-105">
+<a href="{% url 'css' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="relative h-full w-full rounded-3xl bg-[#0b0b18] p-10 backdrop-blur-xl
+                                border border-white/5
+                                transition duration-700
+                                group-hover:shadow-[0_0_80px_rgba(168,85,247,0.4)]">
+
+                        <h3 class="text-2xl font-semibold tracking-wide text-white">
+                            CSS
+                        </h3>
+                        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                            Precision-driven visual architecture with responsive and fluid design systems.
+                        </p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- JavaScript -->
+                <div data-aos="zoom-in"
+                     class="group relative p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500
+                            transition duration-700 hover:-translate-y-6 hover:scale-105">
+<a href="{% url 'javascript' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="relative h-full w-full rounded-3xl bg-[#0b0b18] p-10 backdrop-blur-xl
+                                border border-white/5
+                                transition duration-700
+                                group-hover:shadow-[0_0_80px_rgba(0,255,255,0.4)]">
+
+                        <h3 class="text-2xl font-semibold tracking-wide text-white">
+                            JavaScript
+                        </h3>
+                        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                            Dynamic interaction layer powering intelligent frontend experiences.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Python -->
+                <div data-aos="zoom-in"
+                     class="group relative p-[2px] rounded-3xl bg-gradient-to-r from-purple-500 to-cyan-500
+                            transition duration-700 hover:-translate-y-6 hover:scale-105">
+<a href="{% url 'python' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-purple-500 to-cyan-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="relative h-full w-full rounded-3xl bg-[#0b0b18] p-10 backdrop-blur-xl
+                                border border-white/5
+                                transition duration-700
+                                group-hover:shadow-[0_0_80px_rgba(168,85,247,0.4)]">
+
+                        <h3 class="text-2xl font-semibold tracking-wide text-white">
+                            Python
+                        </h3>
+                        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                            Core intelligence engine for scalable backend and AI-driven architectures.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Django -->
+                <div data-aos="zoom-in"
+                     class="group relative p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500
+                            transition duration-700 hover:-translate-y-6 hover:scale-105">
+<a href="{% url 'django' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="relative h-full w-full rounded-3xl bg-[#0b0b18] p-10 backdrop-blur-xl
+                                border border-white/5
+                                transition duration-700
+                                group-hover:shadow-[0_0_80px_rgba(0,255,255,0.4)]">
+
+                        <h3 class="text-2xl font-semibold tracking-wide text-white">
+                            Django
+                        </h3>
+                        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                            High-performance backend framework for scalable and secure applications.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Flask -->
+                <div data-aos="zoom-in"
+                     class="group relative p-[2px] rounded-3xl bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500
+                            transition duration-700 hover:-translate-y-6 hover:scale-105">
+<a href="{% url 'flask' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="relative h-full w-full rounded-3xl bg-[#0b0b18] p-10 backdrop-blur-xl
+                                border border-white/5
+                                transition duration-700
+                                group-hover:shadow-[0_0_80px_rgba(168,85,247,0.4)]">
+
+                        <h3 class="text-2xl font-semibold tracking-wide text-white">
+                            Flask
+                        </h3>
+                        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                            Lightweight micro-framework for modular and API-first architectures.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- WordPress -->
+                <div data-aos="zoom-in"
+                     class="group relative p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500
+                            transition duration-700 hover:-translate-y-6 hover:scale-105">
+<a href="{% url 'wordpress' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="relative h-full w-full rounded-3xl bg-[#0b0b18] p-10 backdrop-blur-xl
+                                border border-white/5
+                                transition duration-700
+                                group-hover:shadow-[0_0_80px_rgba(0,255,255,0.4)]">
+
+                        <h3 class="text-2xl font-semibold tracking-wide text-white">
+                            WordPress
+                        </h3>
+                        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                            Custom CMS solutions optimized for performance and scalability.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ================= AI & DATA SECTION ================= -->
+        <div class="mb-36">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-20"
+                data-aos="fade-up">
+                AI & Data Intelligence
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-16">
+
+                <div data-aos="fade-right"
+                     class="relative p-[2px] rounded-3xl bg-gradient-to-r from-purple-500 to-cyan-500">
+<a href="{% url 'ai' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="rounded-3xl bg-[#0b0b18] p-12 backdrop-blur-xl
+                                hover:shadow-[0_0_100px_rgba(168,85,247,0.4)]
+                                transition duration-700">
+
+                        <h3 class="text-3xl font-semibold mb-6">
+                            AI Implementation & Automation
+                        </h3>
+
+                        <p class="text-gray-400 leading-relaxed">
+                            Designing intelligent systems, automation pipelines,
+                            and AI-powered backend solutions using advanced Python ecosystems.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+
+                <div data-aos="fade-left"
+                     class="relative p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500">
+<a href="{% url 'powerbi' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                    <div class="rounded-3xl bg-[#0b0b18] p-12 backdrop-blur-xl
+                                hover:shadow-[0_0_100px_rgba(0,255,255,0.4)]
+                                transition duration-700">
+
+                        <h3 class="text-3xl font-semibold mb-6">
+                            Power BI – Data Analytics & Dashboards
+                        </h3>
+
+                        <p class="text-gray-400 leading-relaxed">
+                            Transforming complex datasets into strategic insights
+                            through high-impact dashboards and data intelligence systems.
+                        </p>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+         <!-- PROFESSIONAL SKILLS -->
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold mb-12">Professional Capabilities</h2>
+
+            <div class="flex flex-wrap justify-center gap-8 text-lg">
+<a href="{% url 'communication' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                <div class="px-8 py-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-cyan-400 transition">
+                    💬 Communication
+                </div>
+</a>
+<a href="{% url 'msword' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                <div class="px-8 py-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-purple-400 transition">
+                    📄 MS Word
+                </div>
+                </a>
+<a href="{% url 'powerpoint' %}" class="group relative block p-[2px] rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 transition duration-700 hover:-translate-y-6 hover:scale-105">
+
+                <div class="px-8 py-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-cyan-400 transition">
+                    📊 PowerPoint
+                </div>
+</a>
+            </div>
+        </div>
+
+        <!-- ================= CLOSING ================= -->
+        <div class="text-center mt-32" data-aos="fade-up">
+            <h3 class="text-3xl md:text-4xl font-bold mb-8">
+                Building scalable, intelligent, and performance-driven digital systems.
+            </h3>
+
+            <p class="text-gray-400 max-w-3xl mx-auto text-lg">
+                Let’s collaborate to architect next-generation backend infrastructures
+                and AI-powered platforms engineered for growth.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

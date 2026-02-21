@@ -1,0 +1,94 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-purple-500 via-cyan-500 to-purple-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(168,85,247,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        Communication
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          Effective communication is a cornerstone skill for personal and professional success. It involves the ability to convey ideas clearly, listen actively, and adapt messages for different audiences. Strong communication reduces misunderstandings, fosters collaboration, and builds meaningful relationships across all environments.
+        </p>
+        <p>
+          In professional contexts, communication extends beyond exchanging information. It includes persuasion, negotiation, and influencing outcomes. Clear articulation ensures project alignment with business goals, timely completion, and actionable feedback, enhancing productivity and client satisfaction.
+        </p>
+        <p>
+          Students and early-career professionals benefit from honing communication skills, which boost confidence in presentations, teamwork, and networking. Mastery of communication supports leadership development by enabling motivation, conflict resolution, and the ability to present complex ideas effectively.
+        </p>
+        <p>
+          Modern communication integrates digital tools like emails, video conferencing, collaborative platforms, and instant messaging. Combining technical proficiency with interpersonal skills ensures messages are conveyed efficiently, increasing professionalism, teamwork efficiency, and impact in any organization.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Delivering compelling presentations to clients or teams</li>
+          <li>Writing professional emails, reports, and documentation</li>
+          <li>Collaborating effectively in team projects and cross-functional initiatives</li>
+          <li>Negotiating project scopes, deadlines, or resources with stakeholders</li>
+          <li>Building professional networks and fostering mentorship opportunities</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Be clear, concise, and structured in all forms of communication</li>
+          <li>Actively listen and confirm understanding before responding</li>
+          <li>Adapt your message based on the audience and context</li>
+          <li>Use positive language and maintain professionalism</li>
+          <li>Leverage visuals, charts, and examples to clarify complex ideas</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Practice storytelling techniques to make presentations engaging</li>
+          <li>Use active voice and impactful word choices for persuasion</li>
+          <li>Regularly seek feedback to improve clarity and effectiveness</li>
+        </ul>
+      </div>
+
+      <!-- Example Snippet / Illustration -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre># Example: Structuring a professional email in Python (conceptual example)
+subject = "Project Update: Dashboard Implementation"
+recipient = "manager@example.com"
+body = """
+Hi Team,
+
+The Power BI dashboards are now live with updated metrics and visuals.
+Please review and provide feedback by EOD Friday.
+
+Best regards,
+Alex
+"""
+
+# Send email (using a hypothetical function)
+send_email(recipient, subject, body)</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-yellow-400 via-red-500 to-pink-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_40px_rgba(255,165,0,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        JavaScript
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          JavaScript is the cornerstone of interactive and dynamic web development. It enables developers to create responsive, feature-rich applications that run smoothly in browsers, bridging the gap between static HTML/CSS and fully interactive user experiences.
+        </p>
+        <p>
+          Modern JavaScript supports advanced programming paradigms including ES6+ features, asynchronous operations with Promises and async/await, modular architecture, and integration with APIs and frameworks like React, Vue, and Node.js. Mastery of JavaScript is critical for both front-end and full-stack development.
+        </p>
+        <p>
+          JavaScript also empowers developers to manipulate the DOM, handle user events, and create real-time web applications. It is the backbone for single-page applications, progressive web apps, and modern server-side solutions using Node.js, making it an indispensable skill for professional web developers.
+        </p>
+        <p>
+          With JavaScript, developers can build scalable, maintainable, and high-performance applications, collaborating seamlessly with designers and backend engineers to create cohesive digital experiences.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Developing interactive web interfaces with real-time user feedback</li>
+          <li>Creating single-page applications (SPAs) with React, Vue, or Angular</li>
+          <li>Building server-side applications using Node.js</li>
+          <li>Manipulating DOM elements for dynamic content updates</li>
+          <li>Integrating third-party APIs and web services</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use ES6+ features for cleaner and modern syntax</li>
+          <li>Keep code modular with reusable functions and modules</li>
+          <li>Write asynchronous code carefully using Promises or async/await</li>
+          <li>Follow linting standards (ESLint) and consistent formatting</li>
+          <li>Separate logic, presentation, and data handling for maintainability</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Leverage event delegation for efficient DOM event handling</li>
+          <li>Use modern frameworks/libraries for scalable front-end architecture</li>
+          <li>Optimize performance by minimizing DOM reflows and repaints</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-yellow-400">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;JavaScript Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Interactive Web App&lt;/h1&gt;
+      &lt;button id="clickBtn"&gt;Click Me&lt;/button&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section&gt;
+        &lt;p id="message"&gt;Hello, World!&lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;© 2026 MyWebsite | All Rights Reserved&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;script&gt;
+      const button = document.getElementById('clickBtn');
+      const message = document.getElementById('message');
+
+      button.addEventListener('click', () =&gt; {
+        message.textContent = 'You clicked the button! 🎉';
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

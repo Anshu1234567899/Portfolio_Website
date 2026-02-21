@@ -1,0 +1,97 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-cyan-500 via-purple-500 to-cyan-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(0,255,255,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        WordPress
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          WordPress is a versatile content management system (CMS) that powers over 40% of websites on the internet. It allows both developers and non-developers to create professional websites quickly, combining ease of use with robust functionality. With its vast ecosystem of plugins and themes, WordPress can be adapted for blogs, e-commerce, portfolios, business sites, and more.
+        </p>
+        <p>
+          For developers, WordPress offers full control over site architecture through custom themes, plugins, and APIs. It allows advanced customization and integration with third-party tools, making it suitable for enterprise-grade websites while maintaining scalability, security, and performance.
+        </p>
+        <p>
+          Beyond traditional websites, WordPress supports REST API integration, headless CMS setups, and modern JavaScript frameworks like React or Vue. It also emphasizes SEO-friendly structures, accessibility, and responsive design, enabling developers to deliver highly optimized user experiences.
+        </p>
+        <p>
+          Mastering WordPress development equips developers to build dynamic, interactive websites that are easy to maintain and expand. Proper theme and plugin development, combined with clean code and optimization techniques, ensures professional and high-performance websites.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Blogging platforms, news portals, and content-heavy websites</li>
+          <li>E-commerce stores using WooCommerce, including subscription and membership sites</li>
+          <li>Corporate websites, landing pages, and portfolio sites</li>
+          <li>Community platforms, forums, and membership-driven portals</li>
+          <li>Headless CMS setups integrating with React, Vue, or mobile apps</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use child themes for safe and maintainable customizations</li>
+          <li>Optimize plugins and remove unnecessary ones for performance</li>
+          <li>Follow WordPress coding standards and security best practices</li>
+          <li>Implement caching and image optimization for faster load times</li>
+          <li>Ensure responsive design and accessibility compliance</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use Advanced Custom Fields (ACF) for dynamic content management</li>
+          <li>Leverage REST API for headless WordPress applications</li>
+          <li>Keep themes modular, clean, and update-friendly for long-term maintainability</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre>&lt;!-- Example: WordPress Theme Structure --&gt;
+&lt;?php
+// functions.php
+function my_theme_enqueue_styles() {
+    wp_enqueue_style('main-style', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
+
+// index.php
+get_header();
+if ( have_posts() ) :
+    while ( have_posts() ) : the_post();
+        the_title('&lt;h2&gt;', '&lt;/h2&gt;');
+        the_content();
+    endwhile;
+endif;
+get_footer();
+?&gt;</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

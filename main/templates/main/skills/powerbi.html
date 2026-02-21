@@ -1,0 +1,93 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-cyan-500 via-purple-500 to-cyan-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(0,255,255,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        Power BI – Data Analytics & Dashboards
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          Power BI is a leading business intelligence and data visualization platform that transforms raw data into interactive, insightful dashboards. With its drag-and-drop interface, rich visuals, and support for multiple data sources, Power BI allows analysts, developers, and organizations to monitor KPIs, track performance, and make data-driven decisions.
+        </p>
+        <p>
+          Beyond simple reporting, Power BI supports advanced analytics with DAX formulas, AI-powered insights, and predictive modeling. Users can combine on-premise and cloud data sources, integrate with Excel, SQL databases, and third-party APIs, enabling automated reporting pipelines and actionable dashboards for stakeholders at all levels.
+        </p>
+        <p>
+          With features like drill-through reports, real-time streaming datasets, and role-based access, Power BI empowers organizations to identify patterns, forecast trends, and visualize key metrics effectively. Mastery of Power BI bridges the gap between complex data and strategic decision-making.
+        </p>
+        <p>
+          For students and aspiring data professionals, learning Power BI develops skills in data modeling, visualization, storytelling, and analytical thinking. Creating effective dashboards enhances employability across industries like finance, marketing, operations, and IT.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Tracking business KPIs and performance dashboards</li>
+          <li>Analyzing financial data and operational efficiency</li>
+          <li>Interactive marketing reports and sales performance tracking</li>
+          <li>Customer behavior analysis and product trend insights</li>
+          <li>Automating data consolidation from multiple sources for real-time intelligence</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Keep dashboards clean and avoid clutter</li>
+          <li>Use filters, slicers, and drill-downs to enhance interactivity</li>
+          <li>Optimize data models for faster loading and refresh times</li>
+          <li>Use consistent color schemes and hierarchy to highlight key metrics</li>
+          <li>Document sources and calculations for maintainability and collaboration</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Leverage DAX formulas for complex calculations and metrics</li>
+          <li>Create real-time dashboards using streaming datasets</li>
+          <li>Integrate AI visuals for predictive and trend analysis</li>
+        </ul>
+      </div>
+
+      <!-- Code / Example Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre># Example: Using Python to prepare data for Power BI
+
+import pandas as pd
+
+# Load dataset
+data = pd.read_csv("sales_data.csv")
+
+# Data transformation
+data['TotalSales'] = data['Quantity'] * data['UnitPrice']
+summary = data.groupby('Region')['TotalSales'].sum().reset_index()
+
+# Export for Power BI
+summary.to_csv("sales_summary.csv", index=False)
+print("Data ready for Power BI dashboard")</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deepanshu | AI Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top left, #0f172a, #020617);
+            color: white;
+        }
+
+        /* Neon Glow Utility */
+        .neon-glow:hover {
+            box-shadow: 0 0 15px #22d3ee, 0 0 30px #9333ea;
+        }
+
+        /* Animated Background Glow */
+        .bg-animated::before {
+            content: "";
+            position: fixed;
+            top: -200px;
+            left: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(34,211,238,0.2), transparent 70%);
+            animation: pulseGlow 8s infinite alternate;
+            z-index: -1;
+        }
+
+        @keyframes pulseGlow {
+            0% { transform: scale(1); opacity: 0.4; }
+            100% { transform: scale(1.3); opacity: 0.8; }
+        }
+       
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+}
+</style>
+
+</head>
+
+<body class="bg-animated">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- Logo -->
+        <a href="{% url 'home' %}" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Portfolio Website
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-gray-300 font-medium">
+            <a href="{% url 'home' %}" class="hover:text-cyan-400 transition">Home</a>
+            <a href="{% url 'about' %}" class="hover:text-purple-400 transition">About</a>
+            <a href="{% url 'qualification' %}" class="hover:text-cyan-400 transition">Qualifications</a>
+            <a href="{% url 'certifications' %}" class="hover:text-purple-400 transition">Certifications</a>
+            <a href="{% url 'resume' %}" class="hover:text-cyan-400 transition">Resume</a>
+            <a href="{% url 'projects' %}" class="hover:text-cyan-400 transition">Projects</a>
+            <a href="{% url 'skills' %}" class="hover:text-cyan-400 transition">Skills</a>
+            <a href="{% url 'contact' %}" class="hover:text-purple-400 transition">Contact</a>
+            
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden text-cyan-400 focus:outline-none">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black/80 backdrop-blur-md px-6 pb-4">
+        <a href="{% url 'home' %}" class="block py-2 text-gray-300 hover:text-cyan-400">Home</a>
+        <a href="{% url 'about' %}" class="block py-2 text-gray-300 hover:text-purple-400">About</a>
+        <a href="{% url 'qualification' %}" class="block py-2 text-gray-300 hover:text-purple-400">Qualifications</a>
+        <a href="{% url 'certifications' %}" class="block py-2 text-gray-300 hover:text-purple-400">Certifications</a>
+        <a href="{% url 'resume' %}" class="block py-2 text-gray-300 hover:text-purple-400">Resume</a>
+        <a href="{% url 'projects' %}" class="block py-2 text-gray-300 hover:text-cyan-400">Projects</a>
+        <a href="{% url 'skills' %}" class="block py-2 text-gray-300 hover:text-cyan-400">Skills</a>
+        <a href="{% url 'contact' %}" class="block py-2 text-gray-300 hover:text-purple-400">Contact</a>
+    </div>
+</nav>
+
+<!-- ================= PAGE CONTENT ================= -->
+<main class="pt-24">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="mt-24 bg-slate-950 border-t border-white/10 py-10 text-center">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <h3 class="text-xl font-semibold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Deepanshu Patyal
+        </h3>
+
+        <p class="text-gray-400 mb-6">
+            AI & ML Developer | Django Backend Engineer | Intelligent System Architect
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-6 text-gray-400">
+            <a href="#" class="hover:text-cyan-400 transition neon-glow">LinkedIn</a>
+            <a href="#" class="hover:text-purple-400 transition neon-glow">GitHub</a>
+            <a href="mailto:patyaldeepanshu@gmail.com" class="hover:text-cyan-400 transition neon-glow">Email</a>
+        </div>
+
+        <p class="text-gray-500 text-sm mt-6">
+            © 2026 Deepanshu Patyal. Building scalable intelligent systems with Python & Django.
+        </p>
+    </div>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    // Toggle menu on button click
+    btn.addEventListener("click", (e) => {
+        e.stopPropagation(); // Prevent document click from firing
+        menu.classList.toggle("hidden");
+    });
+
+    // Close menu if user clicks outside
+    document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            menu.classList.add("hidden");
+        }
+    });
+
+    // Prevent closing when clicking inside menu
+    menu.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+</script>
+
+</body>
+</html>

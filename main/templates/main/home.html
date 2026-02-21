@@ -1,0 +1,201 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+<section class="relative py-16 md:min-h-screen md:flex md:items-center 
+                bg-gradient-to-br from-slate-950 via-slate-900 to-black overflow-hidden">
+
+    <!-- Background Glow -->
+    <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-purple-600 rounded-full blur-3xl opacity-20 top-10 left-5"></div>
+    <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-cyan-500 rounded-full blur-3xl opacity-20 bottom-10 right-5"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-6 
+                grid grid-cols-5 md:grid-cols-2 gap-6 md:gap-16 items-center">
+
+        <!-- LEFT CONTENT -->
+<div class="col-span-3 md:col-span-1"
+     data-aos="fade-right"
+     data-aos-duration="1000">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight 
+                       bg-gradient-to-r from-cyan-400 to-purple-500 
+                       bg-clip-text text-transparent">
+                I Engineer Intelligent Systems That Think, Learn & Scale.
+            </h1>
+
+            <p class="mt-4 md:mt-6 text-base sm:text-lg md:text-xl text-gray-300">
+                I’m <span class="text-cyan-400 font-semibold">Deepanshu Patyal</span>, 
+                an AI-FullStack Developer building powerful backend architectures 
+                with Django and Python.
+            </p>
+
+            <div class="mt-6 md:mt-10 flex flex-col sm:flex-row gap-4">
+                <a href="{% url 'projects' %}" 
+                   class="px-6 py-3 md:px-8 md:py-3 text-sm md:text-base
+                          bg-cyan-500 hover:bg-cyan-400 text-black font-semibold 
+                          rounded-full shadow-lg shadow-cyan-500/30 transition duration-300">
+                    Explore My Projects
+                </a>
+
+                <a href="{% url 'contact' %}" 
+                   class="px-6 py-3 md:px-8 md:py-3 text-sm md:text-base
+                          border border-purple-500 text-purple-400 
+                          hover:bg-purple-500 hover:text-white 
+                          rounded-full transition duration-300">
+                    Let’s Build Something Smart
+                </a>
+            </div>
+
+        </div>
+
+       <!-- RIGHT IMAGE -->
+<div class="col-span-2 md:col-span-1 flex justify-center relative"
+     data-aos="fade-left"
+     data-aos-duration="1000">
+    <!-- Spinning Glow Box -->
+    <div class="absolute w-48 h-48 sm:w-56 sm:h-56 md:w-[380px] md:h-[380px] 
+                rounded-3xl bg-gradient-to-tr from-cyan-400 to-purple-500 
+                opacity-20 animate-spin-slow">
+    </div>
+
+    <!-- Glass Card -->
+    <div class="relative w-44 sm:w-52 md:w-[380px]
+                backdrop-blur-xl bg-white/5
+                border border-white/10
+                rounded-2xl md:rounded-[30px]
+                shadow-2xl overflow-hidden">
+
+        <img src="{% static 'images/patyal.png' %}"
+             alt="Deepanshu Patyal"
+             class="w-full h-auto object-cover">
+
+        <div class="text-center py-3 bg-black/40 backdrop-blur-md">
+            <h3 class="text-sm md:text-2xl font-semibold text-white">
+                Deepanshu Patyal
+            </h3>
+            <p class="text-xs md:text-base text-cyan-400">
+                AI-Fullstack Developer
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+</section>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="py-24 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-10">About Me</h2>
+
+        <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+            I don’t just write code — I build intelligent systems. As an AI-FullStack Devloper,
+            I specialize in designing scalable backend architectures using Django and Python.
+            From AI Voice Assistants to intelligent automation tools and dynamic web platforms,
+            my focus is merging machine intelligence with real-world usability.
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= SKILLS SECTION ================= -->
+<section class="py-24 bg-gradient-to-br from-slate-950 to-slate-900">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-purple-400 mb-16">Core Expertise</h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <div class="p-8 bg-white/5 backdrop-blur-lg rounded-2xl border border-cyan-500/20 hover:scale-105 transition duration-500">
+                <h3 class="text-xl font-semibold text-cyan-400 mb-4">Artificial Intelligence</h3>
+                <p class="text-gray-300">
+                    Machine Learning models, intelligent automation systems, AI integrations, and data-driven optimization.
+                </p>
+            </div>
+
+            <div class="p-8 bg-white/5 backdrop-blur-lg rounded-2xl border border-purple-500/20 hover:scale-105 transition duration-500">
+                <h3 class="text-xl font-semibold text-purple-400 mb-4">Backend Engineering</h3>
+                <p class="text-gray-300">
+                    Django architecture, secure authentication systems, REST APIs, and SQL database optimization.
+                </p>
+            </div>
+            <div class="p-8 bg-white/5 backdrop-blur-lg rounded-2xl border border-purple-500/20 hover:scale-105 transition duration-500">
+                <h3 class="text-xl font-semibold text-orange-400 mb-4">Data Analytics</h3>
+                <p class="text-gray-300">
+                    Data visualization, statistical analysis, and insights-driven decision making using Python and SQL.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PROJECTS SECTION ================= -->
+<section class="py-24 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-16">Selected Work</h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <div class="p-8 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition duration-500">
+                <h3 class="text-xl font-semibold mb-4">AI Voice Assistant</h3>
+                <p class="text-gray-400">
+                    An intelligent voice-controlled system capable of executing commands,
+                    automation tasks, and AI-powered responses in real-time.
+                </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition duration-500">
+                <h3 class="text-xl font-semibold mb-4">Blogging Platform</h3>
+                <p class="text-gray-400">
+                    A dynamic content management system powered by Flask backend architecture
+                    with authentication and structured content handling.
+                </p>
+            </div>
+
+            <div class="p-8 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition duration-500">
+                <h3 class="text-xl font-semibold mb-4">AI Smart Applications</h3>
+                <p class="text-gray-400">
+                    AI-based tools and automation systems designed to solve real-world
+                    problems using machine learning logic.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= WHY HIRE ME ================= -->
+<section class="py-24 bg-gradient-to-r from-black to-slate-950 text-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-purple-400 mb-10">Why Work With Me?</h2>
+
+        <p class="text-gray-300 text-lg leading-relaxed">
+            I combine backend precision with AI intelligence. I focus on scalable,
+            secure, and performance-driven solutions. My mindset is product-oriented —
+            I don’t just build features, I build systems that grow and evolve.
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="py-24 bg-black text-center">
+    <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-8">
+            Let’s Build Intelligent Systems Together
+        </h2>
+
+        <a href="{% url 'contact' %}" class="px-10 py-4 bg-purple-600 hover:bg-purple-500 rounded-full text-white font-semibold shadow-lg shadow-purple-500/30 transition duration-300">
+            Contact Me
+        </a>
+    </div>
+</section>
+
+{% endblock %}
