@@ -3,83 +3,101 @@
 
 {% block content %}
 
-<!-- ================= HERO INTRO ================= -->
-<section class="py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-black text-center">
+<style>
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<!-- ================= HERO ================= -->
+<section class="py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-black text-center fade-in">
     <div class="max-w-4xl mx-auto px-6">
         <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            Architecting Intelligent Systems for the Future
+            Building Scalable Web Applications & Data-Driven Solutions
         </h1>
         <p class="mt-6 text-lg md:text-xl text-gray-300">
-            I’m Deepanshu Patyal — an AI & Machine Learning Developer focused on building scalable,
-            intelligent backend systems using Django and Python.
+            I’m Deepanshu Patyal — a Full Stack Developer and Data Analyst passionate about building 
+            modern web applications and extracting meaningful insights from data.
         </p>
     </div>
 </section>
 
-
-<!-- ================= PERSONAL STORY ================= -->
-<section class="py-20 bg-slate-900">
+<!-- ================= STORY ================= -->
+<section class="py-20 bg-slate-900 fade-in">
     <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-cyan-400 mb-8">My Journey into AI & Engineering</h2>
-        <p class="text-gray-300 leading-relaxed text-lg">
-            My journey into technology began with curiosity — not just about how software works,
-            but how systems can think, adapt, and automate decisions. I was drawn toward Artificial Intelligence
-            because it represents the future of digital evolution.
-        </p>
-        <p class="mt-6 text-gray-400 leading-relaxed">
-            What started as learning Python gradually evolved into building intelligent systems.
-            From experimenting with automation scripts to engineering a fully functional AI Voice Assistant,
-            I realized I wasn’t just interested in development — I was passionate about designing intelligent architectures.
-        </p>
-    </div>
-</section>
-
-
-<!-- ================= TECHNICAL PHILOSOPHY ================= -->
-<section class="py-20 bg-gradient-to-br from-slate-950 to-slate-900">
-    <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-purple-400 mb-8">My Technical Philosophy</h2>
+        <h2 class="text-3xl font-bold text-cyan-400 mb-8">My Journey</h2>
         <p class="text-gray-300 text-lg leading-relaxed">
-            I believe great systems are not just functional — they are scalable, efficient, and future-ready.
-            Clean architecture, optimized backend logic, and intelligent data flow are the foundations
-            of everything I build.
+            My journey into technology started with curiosity about how systems work and how data can drive decisions.
+            I began with Python and gradually expanded into web development and data analytics.
         </p>
         <p class="mt-6 text-gray-400 leading-relaxed">
-            My approach combines backend precision with AI-driven adaptability.
-            Every solution I create is engineered to evolve — not just execute.
+            From building web applications using Django to creating data dashboards in Power BI,
+            I enjoy solving real-world problems through both development and data insights.
         </p>
     </div>
 </section>
 
+<!-- ================= PHILOSOPHY ================= -->
+<section class="py-20 bg-gradient-to-br from-slate-950 to-slate-900 fade-in">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-purple-400 mb-8">My Approach</h2>
+        <p class="text-gray-300 text-lg leading-relaxed">
+            I focus on building clean, efficient, and scalable solutions.
+            Whether it's backend development or data analysis, my goal is to create systems
+            that are practical, reliable, and user-focused.
+        </p>
+        <p class="mt-6 text-gray-400 leading-relaxed">
+            I continuously improve my skills by working on real-world projects and exploring AI & ML concepts.
+        </p>
+    </div>
+</section>
 
-<!-- ================= EXPERTISE ================= -->
-<section class="py-20 bg-slate-900">
+<!-- ================= SKILLS ================= -->
+<section class="py-20 bg-slate-900 fade-in">
     <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-cyan-400 mb-12 text-center">Core Expertise</h2>
+        <h2 class="text-3xl font-bold text-cyan-400 mb-12 text-center">Core Skills</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-            <div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-cyan-500/20">
-                <h3 class="text-xl font-semibold text-cyan-400 mb-4">Artificial Intelligence</h3>
+            <div class="bg-white/5 p-8 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+                <h3 class="text-xl font-semibold text-cyan-400 mb-4">Full Stack Development</h3>
                 <p class="text-gray-300">
-                    Designing machine learning workflows, intelligent automation systems,
-                    and AI-powered applications that solve real-world problems.
+                    Building web applications using Django, Flask, APIs, and modern frontend tools.
                 </p>
             </div>
 
-            <div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-purple-500/20">
-                <h3 class="text-xl font-semibold text-purple-400 mb-4">Backend Architecture</h3>
+            <div class="bg-white/5 p-8 rounded-2xl border border-purple-500/20 hover:scale-105 transition">
+                <h3 class="text-xl font-semibold text-purple-400 mb-4">Data Analytics</h3>
                 <p class="text-gray-300">
-                    Building scalable Django-based systems with secure authentication,
-                    RESTful APIs, and optimized SQL database structures.
+                    Creating dashboards and extracting insights using Power BI, SQL, and visualization techniques.
                 </p>
             </div>
 
-            <div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-cyan-500/20">
-                <h3 class="text-xl font-semibold text-cyan-400 mb-4">Modern Web Integration</h3>
+            <div class="bg-white/5 p-8 rounded-2xl border border-cyan-500/20 hover:scale-105 transition">
+                <h3 class="text-xl font-semibold text-cyan-400 mb-4">AI & ML (Learning)</h3>
                 <p class="text-gray-300">
-                    Integrating React frontends with powerful backend systems,
-                    ensuring performance, responsiveness, and seamless user experience.
+                    Exploring machine learning concepts and building beginner-level AI projects.
                 </p>
             </div>
 
@@ -87,67 +105,72 @@
     </div>
 </section>
 
-
 <!-- ================= PROJECT IMPACT ================= -->
-<section class="py-20 bg-gradient-to-r from-black to-slate-950">
+<section class="py-20 bg-gradient-to-r from-black to-slate-950 fade-in">
     <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-purple-400 mb-8">Impact Through Projects</h2>
+        <h2 class="text-3xl font-bold text-purple-400 mb-8">Projects & Work</h2>
         <p class="text-gray-300 text-lg leading-relaxed">
-            My AI Voice Assistant project demonstrates real-time command execution,
-            automation logic, and intelligent interaction. My Blogging Platform showcases
-            backend architecture design, authentication systems, and scalable content management.
+            I have built multiple data analytics dashboards including HR Attrition Analysis,
+            Customer Churn Analysis, E-commerce Sales Dashboard, and Supply Chain Analysis.
         </p>
         <p class="mt-6 text-gray-400 leading-relaxed">
-            Each project reflects my ability to move from concept to execution —
-            combining structured backend engineering with intelligent system design.
+            I have also developed web applications and an AI Voice Assistant project,
+            gaining hands-on experience in backend systems and automation.
         </p>
     </div>
 </section>
 
-
-<!-- ================= VISION ================= -->
-<section class="py-20 bg-slate-900">
+<!-- ================= GOAL ================= -->
+<section class="py-20 bg-slate-900 fade-in">
     <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-cyan-400 mb-8">Vision & Long-Term Goals</h2>
+        <h2 class="text-3xl font-bold text-cyan-400 mb-8">Future Goals</h2>
         <p class="text-gray-300 text-lg leading-relaxed">
-            My long-term vision is to build intelligent systems that operate at scale —
-            systems that can automate complex workflows, optimize decisions,
-            and adapt through machine learning.
-        </p>
-        <p class="mt-6 text-gray-400 leading-relaxed">
-            I aim to evolve as an AI Architect, designing backend infrastructures
-            that power next-generation applications across industries.
+            My goal is to grow as a strong Full Stack Developer and Data Analyst,
+            and gradually move towards advanced AI and machine learning systems.
         </p>
     </div>
 </section>
 
-
-<!-- ================= PERSONAL TRAITS ================= -->
-<section class="py-20 bg-gradient-to-br from-slate-950 to-black text-center">
+<!-- ================= TRAITS ================= -->
+<section class="py-20 bg-gradient-to-br from-slate-950 to-black text-center fade-in">
     <div class="max-w-4xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-purple-400 mb-8">What Defines Me</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-300">
-            <div>Problem-Solving Mindset</div>
-            <div>Scalability-Driven Thinking</div>
-            <div>Innovation-Focused Development</div>
+            <div class="hover:scale-110 transition">Problem-Solving Mindset</div>
+            <div class="hover:scale-110 transition">Continuous Learning</div>
+            <div class="hover:scale-110 transition">Growth-Focused</div>
         </div>
-
-        <p class="mt-10 text-gray-400">
-            I am constantly learning, refining, and pushing my boundaries —
-            because building intelligent systems requires both technical mastery
-            and visionary thinking.
-        </p>
     </div>
 </section>
 
+<!-- ================= FINAL ================= -->
+<section class="py-20 bg-black text-center fade-in">
+    <div class="max-w-3xl mx-auto px-6 space-y-8">
 
-<!-- ================= CLOSING ================= -->
-<section class="py-16 bg-black text-center">
-    <div class="max-w-3xl mx-auto px-6">
-        <h3 class="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            I don’t just build applications. I engineer intelligent digital ecosystems.
+        <!-- Heading -->
+        <h3 class="text-2xl md:text-4xl font-semibold leading-snug 
+                   bg-gradient-to-r from-cyan-400 to-purple-500 
+                   bg-clip-text text-transparent">
+            I build practical applications today while preparing for intelligent systems tomorrow.
         </h3>
+
+        <!-- Subtext (NEW - important for professional feel) -->
+        <p class="text-gray-400 text-sm md:text-lg">
+            Focused on real-world problem solving using AI, Data Analytics, and scalable web technologies.
+        </p>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.linkedin.com/in/deepanshupatyal"
+               class="inline-block px-8 py-3 md:px-10 md:py-4 
+                      bg-purple-600 hover:bg-purple-500 
+                      rounded-full text-white font-semibold 
+                      transition transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30">
+                Let's Connect
+            </a>
+        </div>
+
     </div>
 </section>
 

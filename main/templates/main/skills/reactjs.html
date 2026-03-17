@@ -1,0 +1,93 @@
+{% extends "main/base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto py-16 px-6">
+
+  <div data-aos="zoom-in" 
+       class="relative group rounded-3xl overflow-hidden bg-[#0b0b18] 
+              border-2 border-transparent hover:border-gradient-to-r 
+              from-cyan-400 via-blue-500 to-purple-500 
+              transition duration-700 shadow-lg hover:shadow-[0_0_50px_rgba(0,255,255,0.5)]">
+
+    <!-- Card Content Wrapper -->
+    <div class="p-12 md:p-16 space-y-8">
+
+      <!-- Skill Name -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-4">
+        React.js
+      </h2>
+
+      <!-- Detailed Description -->
+      <div class="text-gray-300 space-y-4 text-lg md:text-xl leading-relaxed">
+        <p>
+          React.js is a powerful JavaScript library used for building dynamic and interactive user interfaces, especially for single-page applications. It allows developers to create reusable UI components, making development faster, more efficient, and highly scalable.
+        </p>
+        <p>
+          With its component-based architecture and virtual DOM, React ensures high performance by updating only the necessary parts of the UI instead of reloading the entire page. This leads to smoother user experiences and faster applications.
+        </p>
+        <p>
+          React integrates seamlessly with modern tools, APIs, and backend technologies, enabling full-stack development. It is widely used in production by companies for building responsive and high-performance web applications.
+        </p>
+        <p>
+          Learning React.js empowers developers to create modern frontends with clean structure, efficient state management, and reusable components, making it an essential skill in today’s web development ecosystem.
+        </p>
+      </div>
+
+      <!-- Real-World Use Cases -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Real-World Use Cases:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Building modern Single Page Applications (SPAs)</li>
+          <li>Creating dynamic dashboards and admin panels</li>
+          <li>Developing interactive UI components and forms</li>
+          <li>Integrating APIs for real-time data display</li>
+          <li>Frontend development for full-stack applications</li>
+        </ul>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Best Practices:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Break UI into reusable components</li>
+          <li>Use functional components and React Hooks</li>
+          <li>Maintain proper folder structure and naming conventions</li>
+          <li>Optimize performance using memoization (React.memo, useMemo)</li>
+          <li>Keep state minimal and manageable</li>
+        </ul>
+      </div>
+
+      <!-- Pro Tips -->
+      <div class="text-gray-300 text-lg md:text-xl">
+        <h3 class="text-2xl font-semibold text-white mb-2">Pro Tips:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Use tools like Vite or Create React App for faster setup</li>
+          <li>Leverage libraries like Tailwind CSS for rapid UI development</li>
+          <li>Use Context API or Redux for state management in large apps</li>
+        </ul>
+      </div>
+
+      <!-- Code Snippet -->
+      <div class="bg-gray-900/50 p-6 rounded-xl overflow-x-auto text-sm md:text-base font-mono text-green-400">
+<pre>// React Example: Simple Component
+import React from "react";
+
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Hello, React!&lt;/h1&gt;
+      &lt;p&gt;Welcome to my React application.&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

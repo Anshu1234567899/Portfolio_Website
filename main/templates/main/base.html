@@ -61,73 +61,125 @@
 <body class="bg-animated">
 
 <!-- ================= NAVBAR ================= -->
-<nav class="fixed w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10">
+<nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-slate-900/70 border-b border-white/10 shadow-lg">
+    
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <!-- Logo -->
-        <a href="{% url 'home' %}" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            Portfolio Website
+        <a href="{% url 'home' %}" 
+           class="text-2xl font-bold tracking-wide 
+                  bg-gradient-to-r from-cyan-400 to-purple-500 
+                  bg-clip-text text-transparent">
+            Deepanshu Patyal
         </a>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8 text-gray-300 font-medium">
-            <a href="{% url 'home' %}" class="hover:text-cyan-400 transition">Home</a>
-            <a href="{% url 'about' %}" class="hover:text-purple-400 transition">About</a>
-            <a href="{% url 'qualification' %}" class="hover:text-cyan-400 transition">Qualifications</a>
-            <a href="{% url 'certifications' %}" class="hover:text-purple-400 transition">Certifications</a>
-            <a href="{% url 'resume' %}" class="hover:text-cyan-400 transition">Resume</a>
-            <a href="{% url 'projects' %}" class="hover:text-cyan-400 transition">Projects</a>
-            <a href="{% url 'skills' %}" class="hover:text-cyan-400 transition">Skills</a>
-            <a href="{% url 'contact' %}" class="hover:text-purple-400 transition">Contact</a>
-            
+        <div class="hidden md:flex items-center space-x-8 text-gray-300 font-medium">
+
+            <a href="{% url 'home' %}" 
+               class="relative hover:text-cyan-400 transition duration-300 group">
+                Home
+                <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
+            </a>
+
+            <a href="{% url 'about' %}" 
+               class="relative hover:text-purple-400 transition duration-300 group">
+                About
+                <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-purple-400 transition-all group-hover:w-full"></span>
+            </a>
+            <a href="{% url 'qualification' %}" 
+               class="relative hover:text-purple-400 transition duration-300 group">
+                Qualification
+                <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-purple-400 transition-all group-hover:w-full"></span>
+            </a>
+
+            <a href="{% url 'projects' %}" 
+               class="relative hover:text-cyan-400 transition duration-300 group">
+                Projects
+                <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
+            </a>
+
+            <a href="{% url 'skills' %}" 
+               class="relative hover:text-cyan-400 transition duration-300 group">
+                Skills
+                <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
+            </a>
+
+            <a href="{% url 'contact' %}" 
+               class="relative hover:text-purple-400 transition duration-300 group">
+                Contact
+                <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-purple-400 transition-all group-hover:w-full"></span>
+            </a>
+
+            <!-- CTA Button -->
+            <a href="{% url 'resume' %}" 
+               class="ml-4 px-5 py-2 rounded-full 
+                      bg-gradient-to-r from-cyan-500 to-purple-500 
+                      text-white text-sm font-semibold 
+                      hover:scale-105 transition duration-300 shadow-md">
+                Resume
+            </a>
+
         </div>
 
         <!-- Mobile Button -->
-        <button id="menu-btn" class="md:hidden text-cyan-400 focus:outline-none">
+        <button id="menu-btn" class="md:hidden text-cyan-400 text-2xl">
             ☰
         </button>
+
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-black/80 backdrop-blur-md px-6 pb-4">
+    <div id="mobile-menu" 
+         class="hidden md:hidden bg-slate-900/95 backdrop-blur-xl px-6 pb-6 space-y-3 text-center">
+
         <a href="{% url 'home' %}" class="block py-2 text-gray-300 hover:text-cyan-400">Home</a>
         <a href="{% url 'about' %}" class="block py-2 text-gray-300 hover:text-purple-400">About</a>
-        <a href="{% url 'qualification' %}" class="block py-2 text-gray-300 hover:text-purple-400">Qualifications</a>
-        <a href="{% url 'certifications' %}" class="block py-2 text-gray-300 hover:text-purple-400">Certifications</a>
-        <a href="{% url 'resume' %}" class="block py-2 text-gray-300 hover:text-purple-400">Resume</a>
         <a href="{% url 'projects' %}" class="block py-2 text-gray-300 hover:text-cyan-400">Projects</a>
         <a href="{% url 'skills' %}" class="block py-2 text-gray-300 hover:text-cyan-400">Skills</a>
         <a href="{% url 'contact' %}" class="block py-2 text-gray-300 hover:text-purple-400">Contact</a>
+
+        <!-- Mobile CTA -->
+        <a href="{% url 'resume' %}" 
+           class="block mt-4 px-5 py-2 rounded-full 
+                  bg-gradient-to-r from-cyan-500 to-purple-500 
+                  text-white font-semibold">
+            Resume
+        </a>
     </div>
+
 </nav>
 
 <!-- ================= PAGE CONTENT ================= -->
-<main class="pt-24">
-    {% block content %}
+<main class="pt-10">
+        {% block content %}
     {% endblock %}
 </main>
 
 <!-- ================= FOOTER ================= -->
-<footer class="mt-24 bg-slate-950 border-t border-white/10 py-10 text-center">
-    <div class="max-w-6xl mx-auto px-6">
+<!-- ================= FOOTER ================= -->
+<footer class="mt-1 bg-slate-950 border-t border-white/5 py-12 text-center">
+        <div class="max-w-6xl mx-auto px-6">
 
-        <h3 class="text-xl font-semibold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+        <h3 class="text-xl font-semibold mb-3 
+                   bg-gradient-to-r from-cyan-400 to-purple-500 
+                   bg-clip-text text-transparent">
             Deepanshu Patyal
         </h3>
 
         <p class="text-gray-400 mb-6">
-            AI & ML Developer | Django Backend Engineer | Intelligent System Architect
+            Full Stack Developer & Data Analyst
         </p>
 
-        <!-- Social Links -->
+        <!-- Social -->
         <div class="flex justify-center space-x-6 text-gray-400">
-            <a href="#" class="hover:text-cyan-400 transition neon-glow">LinkedIn</a>
-            <a href="#" class="hover:text-purple-400 transition neon-glow">GitHub</a>
-            <a href="mailto:patyaldeepanshu@gmail.com" class="hover:text-cyan-400 transition neon-glow">Email</a>
+            <a href="https://www.linkedin.com/in/deepanshupatyal" class="hover:text-cyan-400 transition">LinkedIn</a>
+            <a href="https://github.com/Anshu1234567899" class="hover:text-purple-400 transition">GitHub</a>
+            <a href="mailto:patyaldeepanshu@gmail.com" class="hover:text-cyan-400 transition">Email</a>
         </div>
 
         <p class="text-gray-500 text-sm mt-6">
-            © 2026 Deepanshu Patyal. Building scalable intelligent systems with Python & Django.
+            © 2026 Deepanshu Patyal. All rights reserved.
         </p>
     </div>
 </footer>

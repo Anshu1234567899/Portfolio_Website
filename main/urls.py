@@ -11,6 +11,7 @@ urlpatterns = [
     path('skills/css/', views.css_skill, name='css'),
     path('skills/javascript/', views.javascript_skill, name='javascript'),
     path('skills/python/', views.python_skill, name='python'),
+    path('skills/reactjs/', views.reactjs_skill, name='reactjs'),
     path('skills/django/', views.django_skill, name='django'),
     path('skills/flask/', views.flask_skill, name='flask'),
     path('skills/wordpress/', views.wordpress_skill, name='wordpress'),

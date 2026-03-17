@@ -63,6 +63,8 @@ def javascript_skill(request):
 
 def python_skill(request):
     return render(request, "main/skills/python.html")
+def reactjs_skill(request):
+    return render(request, "main/skills/reactjs.html")
 
 def django_skill(request):
     return render(request, "main/skills/django.html")
